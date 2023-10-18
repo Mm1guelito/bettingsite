@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coral Betting</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="http://www.coral.co.uk"
+        ><img src="images/logo.png" alt="Coral Logo" class="coralLogo"
+      /></a>
+      <img src="images/model.png" alt="Model" class="Model" />
+      <a href="http://www.coral.co.uk?client=true" class="headerButton1"
+        >I'm Already a Customer<button class="headerButton2">Login</button></a
+      >
+    </header>
+
+    <main>
+      <div id="offer">
+        <h1 id="match">Liverpool v Augsburg</h1>
+        <p id="betDetails">Liverpool to win In 90 mins 8/1</p>
+        <p id="betCondition">
+          £/E 5 bet only | plus £/E free bet should your bet loose
+        </p>
+
+        <!-- Add the 3 steps text here -->
+        <ol id="steps">
+          <li class="step">Step 1: Register and deposit £5 or more.</li>
+          <li class="step">
+            Step 2: Display the enhanced odds on the homepage.
+          </li>
+          <li class="step">
+            Step 3: Place the bet and if the bet wins, the winnings will be paid
+            as a £40 free bet.
+          </li>
+        </ol>
+
+        <form
+          action="http://www.coral.co.uk/register"
+          method="get"
+          id="betForm"
+        >
+          <input type="email" id="email" name="email" required />
+          <button type="submit" id="betNow">Bet Now</button>
+        </form>
+
+        <div id="about">
+          <h2>About Coral Sports Betting</h2>
+          <!-- Add the text here -->
+        </div>
+
+        <a href="#" id="terms">Terms & Conditions</a>
+
+        <!-- Terms Modal -->
+        <div id="termsModal">
+          <!-- Add the terms here -->
+        </div>
+
+        <!-- Message for email validation -->
+        <div id="message"></div>
+      </div>
+    </main>
+
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "BreurFont";
+  src: url("fonts/BreuerFont.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BreurHeadline";
+  src: url("fonts/BreuerHeadline.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BreurText-Bold";
+  src: url("fonts/BreuerText-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BreurText-Medium";
+  src: url("fonts/BreuerText-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BreurText";
+  src: url("fonts/BreuerText.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BreurHeadline-Oblique";
+  src: url("fonts/BreuerHeadline-Oblique.otf") format("opentype");
+}
+@font-face {
+  font-family: "BreurText-BoldItalic";
+  src: url("fonts/BreuerText-BoldItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "BreurText-Regular";
+  src: url("fonts/BreuerText-Regular.otf") format("opentype");
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: max-content 50vw max-content;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  text-align: center;
+  align-items: center;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+header a {
+  color: #333;
+  text-decoration: underline;
+  padding-left: 5px;
+}
+.headerButton1 {
+  border: 1px solid black;
+  grid-column: 3/4;
+}
+.headerButton2 {
+  padding: 1vh;
+  margin-left: 1vh;
+  background-color: yellow;
+  cursor: pointer;
+}
+.coralLogo {
+  height: 25vh;
+  width: 80%;
+  display: inline-block;
+}
+.Model {
+  width: 100%;
+  margin-left: 10vh;
+  grid-column: 2/3;
+}
+
+#offer {
+  max-width: 37.5vw;
+  margin: 0 auto;
+  padding: 1.25vw;
+  background-color: #fff;
+  box-shadow: 0 0 0.63vh rgba(0, 0, 0, 0.1);
+}
+
+#offer h1,
+#offer p {
+  text-align: center;
+}
+
+#betForm {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.63vh;
+}
+
+#betForm input[type="email"] {
+  flex-grow: 1;
+  padding: 0.63vw;
+  margin-right: 0.63vw;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#betForm button {
+  padding: 0.63vh 1.25vh;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  text-shadow: 0px 1px 2px black;
+  font-weight: bold;
+}
+
+#betForm button:hover {
+  background-color: #0056b3;
+}
+
+#message {
+  margin-top: 1.25vh;
+}
+
+.step {
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+
+.step:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.step:nth-child(3) {
+  animation-delay: 4s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
